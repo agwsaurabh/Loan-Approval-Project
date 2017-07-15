@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Submit Application</title>
+		<link rel="stylesheet" href="../CSS/Submit_Page.css">
+		<script src="../JS/Submit_Page.js"></script>
+	</head>
+	
+	<body class="MainBody">
+		<div>
+			<h1 class= "SubmitHead"> Submit New Application </h1>
+		</div>
+		<p id="First_Name_Val" style="color: Red"> </p>	
+<br>			
+		<div class="wrap">
+			<div class="fleft">
+				<form name="Sub_App" id="Sub_App">
+					<label class= "Left_Label">First Name</label><input  class= "Left_Input" id="First_Name" type="text" name= "First_Name" placeholder="First Name" maxlength="255">
+					<label class= "Left_Label">Middle Name</label><input class= "Left_Input" type = "text" name= "Middle_Name" placeholder="Middle Name" maxlength="255">
+					<label class= "Left_Label">Last Name</label><input  class= "Left_Input" type="text" name= "Last_Name" placeholder="Last Name" maxlength="255">
+					<label class= "Left_Label">Date of Birth</label><input class= "DoB" type="date" name="DOB">
+					<label class= "Left_Label" style= "width: 100%">	Marital Status
+						<select name="Marital_Status" class= "Box">
+							<option value="Options">Options</option>
+							<option value="Single">Single</option>
+							<option value="Married">Married</option>
+							<option value="Separated">Separated</option>
+							<option value="Divorced">Divorced</option>
+							<option value="Widowed">Widowed</option>
+						</select>
+					</label>
+					<label class= "Left_Label">SSN Number</label><input class= "Left_Input" type="number" name= "SSN" placeholder="SSN Number">
+					<label class= "Left_Label">Loan Amount</label><input class= "Left_Input" type="number" name= "Loan_Amount" placeholder="Loan Amount">
+					<label class= "Left_Label" style= "width: 100%">	Loan Purpose
+						<select name="Loan_Purpose" class= "Box">
+							<option value="Options">Options</option>
+							<option value="Debt">Debt</option>
+							<option value="Educational Loan">Educational Loan</option>
+							<option value="Personal Loan">Personal Loan</option>
+							<option value="Home Loan">Home Loan</option>
+						</select>
+					</label>
+			</div>
+			<div class="fright">
+				<p class= "Heading"> Address </p>
+			</div>
+			<div class="fright_box">
+				<div>
+						<label class= "Right_Label">Address Line 1</label><input class= "Right_Input" type="text" name= "Home_Add_Line1" placeholder="Address Line 1" maxlength="255">				
+						<label class= "Right_Label">Address Line 2</label><input class= "Right_Input" type = "text" name= "Home_Add_Line2" placeholder="Address Line 2" maxlength="255">
+						<label class= "Right_Label">City</label><input class= "Right_Input" type="text" name= "Home_City" placeholder="City" maxlength="100">
+						<label class= "Right_Label">State</label><input class= "Right_Input" type="text" name="Home_State" placeholder="State" maxlength="100">
+						<label class= "Right_Label">Postal Code</label><input class= "Right_Input" type="number" name="Home_Zip" placeholder="123456">
+				</div>
+			</div>
+				
+			<div class="fright">
+				<br>
+				<p class= "Heading">  Contact Information</p>
+			</div>
+			<div class="fright_box">
+				<div>
+						<label class= "Right_Label">Home Phone</label><input class= "Right_Input" type="tel" name= "Ph_Home" placeholder="123456">				
+						<label class= "Right_Label">Office Phone</label><input class= "Right_Input" type = "tel" name= "Ph_Office" placeholder="123456">
+						<label class= "Right_Label">Mobile</label><input class= "Right_Input" type="tel" name= "Mobile" placeholder="123456">
+						<label class= "Right_Label">Email Address</label><input class= "Right_Input" type="email" name="email" placeholder="test@test.com">
+				</div>
+			</div>
+		</div>
+		
+		<div>
+			<label name= "Desc" class= "Left_Label" style= "height:10px">Description</label><textarea rows="5" cols="145" class= "Desc_Input" type="text" name= "Desc" placeholder= "Describe the reason why you are applying for the loan "></textarea>	
+		</div>
+		<div>
+		<br><br><br><br><br><br>
+				<p class= "Heading">  Employment Details</p>
+		</div>
+		
+		<div class= "Employment">
+			<div class="wrap">
+				<div class="Employ_fleft">
+						<label class= "Employ_Label">Employer Name</label><input class= "Left_Input" type="text" name= "Emp_Name" placeholder="Name" maxlength="255">				
+						<label class= "Employ_Label">Annual Salary</label><input class= "Left_Input" type = "number" name= "Ann_Sal" placeholder="Annual Salary">
+				</div>
+				<div class="Employ_fright">
+						<label class= "Employ_Label">Work Experience</label>
+						<input class= "Right_Input" style= "margin-right: 10px; width:55px" type="number" name= "Work_Ex_Year" placeholder="Year"><input class= "Right_Input" style= "width:55px" type="number" name= "Work_Ex_Mon" placeholder="Month">			
+						<label class= "Employ_Label">Designation</label><input class= "Right_Input" type = "text" name= "Des" placeholder="Designation" maxlength="255">
+				</div>
+			
+				<p class= "Heading" style= "margin-top:-1px">Address</p>
+				<div class= "Emp_Add">
+					<label class= "Add_Label">Address Line 1</label><input class= "Add_Input" type="text" name= "Emp_Add_Line1" placeholder="Address Line 1" maxlength="255">				
+					<label class= "Add_Label">Address Line 2</label><input class= "Add_Input" type = "text" name= "Emp_Add_Line2" placeholder="Address Line 2" maxlength="255">
+					<label class= "Add_Label">Ciy</label><input class= "Add_Input" type="text" name= "Emp_City" placeholder="City" maxlength="100">
+					<label class= "Add_Label">State</label><input class= "Add_Input" type = "text" name= "Emp_State" placeholder="State" maxlength="100">
+					<label class= "Add_Label">Postal Code</label><input class= "Add_Input" type="number" name= "Emp_Zip" placeholder="123456">
+				</div>
+			</div>
+		</div>
+		<div align= "center">
+			<br>
+				<input class= "button_submit" type="submit" value="Submit">
+				<input class= "button_cancel" action="action" onclick="window.history.go(-1); return false;" type="button" value="Cancel"/>
+				</form>
+				<p id="Demo"> </p>
+		</div>
+	</body>
+</html>

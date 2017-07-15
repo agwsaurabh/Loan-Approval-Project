@@ -1,0 +1,59 @@
+h1.BankName {
+    margin-bottom: 1px;
+	font-family:arial;	
+	padding-top:50px;
+	font-size:50pt;
+	color:#87BB3D;
+}
+h1.Welcome {
+	font-family:arial;
+	font-size:25pt;
+	font-weight:bold;
+}
+p.Description {
+    font-family:arial;
+	margin: 2px;
+	font-size:16pt;
+	
+}
+p.Paragraph {
+    font-family:arial;
+	font-size:15pt;
+	font-weight:normal;
+	word-wrap: break-word;
+	width:35%;
+}
+a.Link {
+    font-family:arial;
+	font-size:10pt;
+	font-weight:normal;
+	width:30%;
+	float:right;
+}
+
+a:link {
+    color: blue; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.MainBody {
+    padding-left: 10%;
+	padding-right: 10%;
+	background-image: url("../../../images/lena_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}

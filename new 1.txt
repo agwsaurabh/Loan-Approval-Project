@@ -1,0 +1,66 @@
+create table application_details(
+application_id int NOT NULL PRIMARY KEY auto_increment,
+first_Name varchar(255) NOT NULL,
+middle_Name varchar(255),
+last_Name varchar(255) NOT NULL,
+dob DATE NOT NULL,
+marital_Status varchar(9) NOT NULL,
+ssn varchar(50) NOT NULL,
+loan_Amount bigint NOT NULL,
+loan_Purpose varchar(20) NOT NULL,
+description varchar(255),
+home_Add_Line1 varchar(255) NOT NULL,
+home_Add_Line2 varchar(255),
+home_City varchar(100) NOT NULL,
+home_State varchar(100) NOT NULL,
+home_Zip int NOT NULL,
+ph_Home bigint NOT NULL,
+ph_Office bigint,
+mobile bigint NOT NULL,
+email varchar(255) NOT NULL,
+emp_Name varchar(255) NOT NULL,
+ann_Sal bigint NOT NULL,
+designation varchar(255),
+emp_Add_Line1 varchar(255) NOT NULL,
+emp_Add_Line2 varchar(255),
+emp_City varchar(100) NOT NULL,
+emp_State varchar(100) NOT NULL,
+work_Ex_Year int NOT NULL,
+work_Ex_Mon int NOT NULL,
+emp_Zip int NOT NULL,
+submission_time timestamp NOT NULL default current_timestamp,
+score float(22),
+decline_Reason varchar(20)
+) ENGINE=InnoDB;
+
+create table application_status(
+applicant_name varchar(255),
+submit_date date,
+status varchar(25),
+application_id int NOT NULL PRIMARY KEY,
+index par_id (application_id),
+foreign key (application_id)
+	references application_details(application_id)
+	on delete cascade
+	on update cascade
+) ENGINE=InnoDB;
+
+create table bureau_data(
+id int primary key not null,
+delinq_2yrs int,
+inq_last_6mths int,
+mths_since_last_delinq int,
+ageon_file int,
+pub_rec int,
+revol_util float(22),
+open_acc int
+);
+
+
+/*
+insert into application_details (first_name,last_name,date_of_birth,marital_status,SSN,loan_amt,loan_purpose,applicant_address_line1,applicant_city,applicant_state,applicant_postal_code,home_phone,mobile,email,employer_name,salary,designation,employer_address_line1,employer_city,employer_state,employer_postal_code) 
+values ('bennnn','frank','1887-05-22', 'Single', '111654154', 275424, 'education', 'lsiudfhlksdjdf', 'asd', 'sds', 99999, 777777777, 8888888888, 'sdkljf','fdd', 8987876, 'dfg', 'dfff', 'wer', 'sdf', 12345 );
+
+insert into application_status (application_id) values (1);
+insert into application_status (application_id) values (2);
+*/

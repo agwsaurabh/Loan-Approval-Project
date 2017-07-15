@@ -1,0 +1,33 @@
+body.MainBody {
+    padding-left: 10%;
+	padding-right: 20%;
+	padding-bottom:5%;
+	background-image: url("../../../images/lena_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ViewHead {
+    font-family:arial;
+	font-size:20pt;
+	font-weight:normal;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+.Paragraph {
+	margin-bottom: 5px;
+    font-family:arial;
+	font-size:12pt;
+	font-weight:normal;
+}
+.button_back {
+	background-color: #E6E6E6; 
+    color: black;
+	border: 2px solid #000000;
+	border-radius: 4px;
+    padding: 3px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	margin-left:30px;
+}
